@@ -1,0 +1,23 @@
+footer{
+    padding: 35px 0;
+    overflow: hidden;
+}
+footer nav ul{
+    float: right;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 5px;
+}
+footer nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+footer nav ul li a{
+    color: #838181;
+    font-family: "raleway-regular", serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+footer nav ul li a:hover{
+    background-color: #f6f6f6;
+}

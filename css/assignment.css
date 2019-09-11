@@ -1,0 +1,23 @@
+.assignment{
+    margin-top: 50px;
+    padding: 50px 0;
+    background: #fafafa;
+}
+.assignment ul{
+    list-style: upper-latin;
+}
+.assignment ul li{
+    width: 150px;
+    margin-left: 60px;
+}
+.assignment ul li a{
+    color: #616161;
+    font-family: "raleway-regular", serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+.assignment ul li a:hover{
+    background-color: cornsilk;
+}

@@ -1,0 +1,36 @@
+.intro ul{
+    margin-top: 100px;
+}
+.intro ul li{
+    list-style: none;
+    display: block;
+    width: 313px;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+}
+.intro ul li:first-child{
+    margin-left: 0;
+}
+.intro ul li .separator{
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #f6f6f6;
+    margin: 20px auto;
+}
+.intro ul li h2{
+    color: #616161;
+    font-family: "raleway-bold", serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.intro ul li p{
+    color: #838181;
+    font-family: "raleway-regular", serif;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 40px;
+    letter-spacing: .5px;
+}
