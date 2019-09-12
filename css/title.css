@@ -1,0 +1,26 @@
+.title{
+    text-align: center;
+    overflow: hidden;
+}
+.title h2{
+    color: #616161;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+.title h3{
+    color: #9b9b9b;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-weight: normal !important;
+}
+.title hr.separator{
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: 0 auto;
+    padding: 0;
+    border: 0 !important;
+}

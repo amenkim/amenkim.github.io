@@ -23,13 +23,11 @@
     color: skyblue;
 }
 .billboard .caption h1{
-    font-family: "raleway-bold", serif;
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 .billboard .caption p{
-    font-family: "raleway-regular", serif;
     font-size: 18px;
     margin-bottom: 30px;
 }
