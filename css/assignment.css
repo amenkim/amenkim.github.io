@@ -4,7 +4,7 @@
     background: #fafafa;
 }
 .assignment ul{
-    list-style: upper-latin;
+    list-style: circle;
 }
 .assignment ul li{
     width: 150px;

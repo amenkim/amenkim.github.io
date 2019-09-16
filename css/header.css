@@ -20,9 +20,4 @@ header nav ul li a{
     text-decoration: none;
     font-family: "raleway-regular", serif;
     font-size: 14px;
-
-    transition:all .2s linear;
-    -webkit-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -o-transition:all .2s linear;
 }
