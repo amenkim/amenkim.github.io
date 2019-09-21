@@ -4,10 +4,9 @@
     background: #fafafa;
 }
 .assignment ul{
-    list-style: circle;
+    list-style: decimal;
 }
 .assignment ul li{
-    width: 150px;
     margin-left: 60px;
 }
 .assignment ul li a{

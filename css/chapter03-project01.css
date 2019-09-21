@@ -1,0 +1,71 @@
+header, footer {
+    color: white;
+    background-color: #3D6271;
+    padding: 5px;
+}
+header h1 {
+    font-size: 30px;
+}
+header h2 {
+    font-size: 15px;
+}
+body {
+    background-color: darkslategrey;
+    margin: 0em 4em 0.5em 4em;
+}
+.billboard {
+    background-color: cadetblue;
+    font-weight: bolder;
+}
+.billboard a {
+    color: cyan;
+}
+.billboard ul {
+    list-style-type:none;
+    padding: 5px;
+
+}
+.billboard ul li {
+    display:inline;
+    padding: 8px;
+}
+.main {
+    background-color: #fafafa;
+    padding: 5px;
+}
+.main .description h3 {
+    font-size: 20px;
+    padding: 0;
+}
+.main .description p {
+    padding: 3px;
+}
+.main .description img {
+    border: solid;
+    padding: 2px;
+    border-color: #9b9b9b;
+    border-width: 1px;
+}
+button{
+    box-shadow: 0px 0px 1px #616161;
+    background: linear-gradient(#ebebeb,#838181);
+}
+.intro {
+    font-size: 15px;
+    color: #838181;
+    font-style: italic;
+}
+.main .reviews .comment {
+    border-bottom: 1px dotted black;
+}
+footer ul {
+    list-style-type:none;
+    padding: 2px;
+}
+footer ul li {
+    display:inline;
+    padding: 3px;
+}
+footer a {
+    color: cyan;
+}
