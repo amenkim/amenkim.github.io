@@ -1,0 +1,61 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0em 0em 0em 4em;
+    font-family: Calibri,sans-serif;
+}
+header {
+    color: black;
+    background-image: url("../img/head.png");
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+header h1 {
+    font-size: 30px;
+    padding: 10px;
+    font-family: Six Caps,Calibri,sans-serif;
+    font-weight: 800;
+}
+header p {
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.nothing h1 {
+    background-image: url("../img/contact.png");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 10px;
+}
+.nothing .live {
+    background-image: url("../img/live.png") ;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.nothing .live h2 {
+    font-size: 18px;
+    padding: 20px;
+}
+.nothing .live p {
+    background-image: url("../img/day.png");
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 17px;
+    padding: 13px;
+    margin-left: 1em;
+}
+.nothing .live br {
+    font-size: 2px;
+}
+.nothing .contact {
+    background-image: url("../img/contact.png");
+    background-repeat: no-repeat;
+}
+.nothing .contact p {
+    padding: 15px;
+}
+.nothing .contact a {
+    text-decoration: underline dashed;
+}

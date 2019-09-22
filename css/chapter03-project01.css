@@ -56,7 +56,7 @@ button{
     font-style: italic;
 }
 .main .reviews .comment {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dashed black;
 }
 footer ul {
     list-style-type:none;
