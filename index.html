@@ -11,13 +11,14 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
     <link rel="stylesheet" type="text/css" href="css/assignment.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
 
 	<section class="billboard" id="top">
 		<header class="wrapper">
-			<img src="img/anim.gif" width="100" height="100" alt="gif"/>
+			<img src="img/anim.gif" width="144" height="144" alt="gif"/>
 			<nav>
 				<ul>
 					<li><a href="#myself">About me</a></li>
@@ -26,8 +27,7 @@
 				</ul>
 			</nav>
 		</header>
-
-		<div class="caption clearfix">
+		<div class="caption">
 			<h1>Wang Shengbo's Homepage</h1>
 			<p>Assignment of Project One for IAD: Personal Home Page</p>
 			<hr>
@@ -41,13 +41,13 @@
 				<img class="icon" src="img/icon1.png" alt=""/>
 				<span class="separator"></span>
 				<h2>My Technology Stack</h2>
-				<p>C, Java, Python, PHP, PostgreSQL</p>
+				<p>C, Java, Python, PHP, PostgreSQL, CSS, JavaScript</p>
 			</li>
 			<li>
 				<img class="icon" src="img/icon2.png" alt=""/>
 				<span class="separator"></span>
 				<h2>In Learning</h2>
-				<p>AI, JavaScript, MySQL, Android, HTML, CSS...</p>
+				<p>AI, jQuery, MySQL, Android, HTML,...</p>
 			</li>
 			<li>
 				<img class="icon" src="img/icon3.png" alt=""/>
@@ -58,7 +58,7 @@
 		</ul>
 	</section><!--  End intro  -->
 
-	<section class="assignment" id="myAssignment">
+	<section class="assignment wrapper" id="myAssignment">
 		<div class="wrapper">
 			<div class="title">
 				<h2>Assignments</h2>
@@ -69,16 +69,39 @@
 				<li><a href="chapter02-project01.html">Chapter02-project01</a></li>
 				<li><a href="chapter02-project03.html">Chapter02-project03</a></li>
                 <li><a href="chapter03-project01.html">Chapter03-project01</a></li>
+                <li><a href="chapter03-project03.html">Chapter03-project03</a></li>
 			</ul>
 		</div>
 	</section><!--  End assignment  -->
+
+    <section class="gallery wrapper">
+		<div class="title">
+			<h2>Gallery</h2>
+			<h3>Some useless arts</h3>
+			<hr class="separator"/>
+		</div>
+		<table>
+			<tr>
+				<th><a target="_blank" href="img/one_small.jpg"><img src="img/one_small.jpg" alt="Gideon Jura" width="210" height="190"></a></th>
+				<th><a target="_blank" href="img/two.jpg"><img src="img/two.jpg" alt="Nicol Bolas" width="256" height="160"></a></th>
+				<th><a target="_blank" href="img/two_small.jpg"><img src="img/two_small.jpg" alt="Emrakul" width="210" height="190"></a></th>
+				<th><a target="_blank" href="img/four.jpg"><img src="img/four.jpg" alt="Black Lotus" width="210" height="190"></a></th>
+			</tr>
+			<tr>
+				<td><div class="desc">Gideon Jura<br>(基定尤拉) - 奥札奇再起</div></td>
+				<td><div class="desc">Nicol Bolas, Planeswalker<br>(鹏洛客尼可波拉斯) - 聚流</div></td>
+				<td><div class="desc">Emrakul, the Aeons Torn<br>(万世创伤伊莫库) - 奥札奇再起</div></td>
+				<td><div class="desc">Black Lotus<br>(黑莲花) - 快乐假期</div></td>
+			</tr>
+		</table>
+    </section>
 
 	<footer>
 		<div class="wrapper">
 			<div id="address">
                 <img src="img/anim.gif" width="70" height="70" class="footer_anim" alt="gif"/>
                 <br><br>
-				<p>My email address: kimamen@qq.com.</p>
+				<p>My email address: kimamen@qq.com</p>
 			</div>
 			<nav>
 				<ul>
