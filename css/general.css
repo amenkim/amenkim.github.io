@@ -43,3 +43,28 @@ h1, h2, h3, h4, h5 ,h6{
 .clearfix:after {
     clear: both;
 }
+
+.adv:first-child {
+    position: fixed;
+    top: 17em;
+    left: 0;
+    z-index: 10;
+}
+.adv:first-child:hover .popup {
+    opacity: 0.7;
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    visibility: visible;
+}
+.adv .popup {
+    position: absolute;
+    background: #ebebeb;
+    visibility: hidden;
+}
+.adv p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
