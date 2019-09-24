@@ -5,6 +5,18 @@
 	<meta charset="utf-8">
 	<meta name="description" content="homepage"/>
     <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button.but").click(function(){
+				var div=$("div.flash");
+				div.animate({left:"200px",top:"0px"},"slow");
+				div.animate({left:"200px",top:"200px"},"slow");
+				div.animate({left:"-200px",top:"200px"},"slow");
+				div.animate({left:"-200px",top:"0px"},"slow");
+				div.animate({left:"0px",top:"0px"},"slow");
+            });
+        });
+    </script>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/title.css">
@@ -13,16 +25,22 @@
     <link rel="stylesheet" type="text/css" href="css/intro.css">
     <link rel="stylesheet" type="text/css" href="css/assignment.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
-    <figure class="adv">
-      <img src="img/anim.gif" width="144" height="144" alt="gif">
-        <figcaption class="popup">
-            <img src="img/anim.gif" width="288" height="288" alt="">
-            <p>Original size</p>
-        </figcaption>
-    </figure>
+
+	<section class="adv">
+		<figure>
+			<img src="img/anim.gif" width="144" height="144" alt="gif">
+			<figcaption class="popup">
+				<img src="img/anim.gif" width="288" height="288" alt="">
+				<p>Original size</p>
+			</figcaption>
+		</figure>
+	</section>
+
+
 	<section class="billboard" id="top">
 		<header class="wrapper">
 			<img src="img/anim.gif" width="144" height="144" alt="gif"/>
@@ -101,6 +119,17 @@
 				<td><div class="desc">Black Lotus<br>(黑莲花) - 快乐假期</div></td>
 			</tr>
 		</table>
+    </section>
+
+    <section class="animation wrapper">
+        <div class="title">
+            <h2>Animation practice</h2>
+            <div class="flash">
+                <img src="img/anim2_1.gif" alt="gif2" height="199" width="182">
+            </div>
+			<button class="but">Fly</button>
+			<p></p>
+        </div>
     </section>
 
 	<footer>
