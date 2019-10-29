@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:el="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    </style>
+</head>
+<body>
+<!--test1-->
+<div id="app1" class="col-4">
+    <h1>test1</h1>
+    <ol>
+        <!-- Now we provide each todo-item with the todo object    -->
+        <!-- it's representing, so that its content can be dynamic -->
+        <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+    </ol>
+</div>
+<script>
+    Vue.component('todo-item', {
+        // The todo-item component now accepts a
+        // "prop", which is like a custom attribute.
+        // This prop is called todo.
+        props: ['todo'],
+        template: '<li>{{ todo.text }}</li>'
+    })</script>
+<script>
+    new Vue({
+        el: '#app1',
+        data: {
+            groceryList: [
+                { text: 'Vegetables' },
+                { text: 'Cheese' },
+                { text: 'Whatever to eat' }
+            ]
+        }
+    })
+</script>
+<!--test2-->
+<div id="app2" class="col-4">
+    <h1>test2</h1>
+    <h2>当前计数：{{counter}}</h2>
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+</div>
+<script>
+    let app = new Vue({
+        el:'#app2',
+        data: {
+            counter:0
+        },
+        methods: {
+            increment() {
+                this.counter++
+            },
+            decrement() {
+                this.counter--
+            }
+        }
+    })
+</script>
+<!--test3-->
+<div id="app3" class="col-4">
+    <h1>test3</h1>
+    <h2>{{link}} (直接用{{}}输出)</h2>
+    <h2 v-html="link"></h2>
+</div>
+<script>
+    let app3 = new Vue({
+        el: '#app3',
+        data:{
+            link: '<a href="http://www.baidu.com">百度一下</a>'
+        }
+    })
+</script>
+<!--test4-->
+<div id="app4" class="col-4">
+    <h1>test4</h1>
+    <a v-bind:href="link">Vuejs官网</a>
+    <img v-bind:src="logoURL" alt="" width="50" height="50">
+
+    <a :href="link">Vuejs官网</a>
+    <img :src="logoURL" alt="" width="50" height="50">
+</div>
+<script>
+    let app4 = new Vue({
+        el:'#app4',
+        data:{
+            logoURL:'https://vuejs.org/images/logo.png',
+            link:'https://vuejs.org/'
+        }
+    })
+</script>
+<!--test5-->
+<div id="app5" class="col-4">
+    <h1>test5</h1>
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+</div>
+<script>
+    var data = {counter1:0}
+    Vue.component('simple-counter', {
+        template: '<button v-on:click="counter1 += 1">{{counter1}}</button>',
+        data: function(){
+            return{
+                counter1:0
+            }
+        }
+    })
+    new Vue({
+        el:'#app5'
+    })
+</script>
+<!--test6-->
+<div id="app6" class="col-4">
+    <div v-bind:style="styleObject" >test6</div>
+</div>
+<script>
+    let app6 = new Vue({
+        el:"#app6",
+        //template: '<div v-bind:style="styleObject"></div>',
+        data: {
+            styleObject: {
+                color: 'red',
+                fontSize: '30px'
+            }
+        }
+    })
+</script>
+<!--test7-->
+<div id="app7" class="col-4">
+    <h1>test7</h1>
+    <h2>点击次数:{{counter2}}</h2>
+    <button @click="handleAdd">+1</button>
+    <button @click="handleAddTen(10,$event)">+10</button>
+</div>
+<script>
+    let app7 = new Vue({
+        el:"#app7",
+        data : {counter2:0},
+        methods:{
+            handleAdd(event){
+                console.log(event)
+                this.counter2++
+            },
+            handleAddTen(count,event){
+                console.log(event)
+                this.counter2 += 10;
+            }
+        }
+    })
+</script>
+<!--test8-->
+<div id="app8" class="cpl-4">
+    <div v-if="score>=90">优秀</div>
+    <div v-else-if="score>=80">良好</div>
+    <div v-else-if="score>=60">及格</div>
+    <div v-else>不及格</div>
+</div>
+<script>
+    let app8 = new Vue({
+        el:'#app8',
+        data:{
+            score:98
+        }
+    })
+</script>
+
+</body>
+</html>

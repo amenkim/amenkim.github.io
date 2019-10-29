@@ -4,8 +4,35 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="1">
+          <list size="11">
             <item index="0" class="java.lang.String" itemvalue="initial-scale" />
+            <item index="1" class="java.lang.String" itemvalue="v-model" />
+            <item index="2" class="java.lang.String" itemvalue="v-on:click" />
+            <item index="3" class="java.lang.String" itemvalue="@click" />
+            <item index="4" class="java.lang.String" itemvalue="v-html" />
+            <item index="5" class="java.lang.String" itemvalue="v-bind:href" />
+            <item index="6" class="java.lang.String" itemvalue="v-bind:src" />
+            <item index="7" class="java.lang.String" itemvalue="v-bind:style" />
+            <item index="8" class="java.lang.String" itemvalue="v-else-if" />
+            <item index="9" class="java.lang.String" itemvalue="v-if" />
+            <item index="10" class="java.lang.String" itemvalue="v-else" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="todo-item" />
+            <item index="7" class="java.lang.String" itemvalue="simple-counter" />
           </list>
         </value>
       </option>
