@@ -119,12 +119,15 @@
         },
         methods:{
             //点击开始，遮罩消失
-            gameStart(){this.maskshow=false},
+            gameStart(){
+                this.maskshow=false
+                alert("莫得服务器，自己和自己玩吧")
+            },
             //游戏结束，初始化游戏状态,并提示
             gameOver(){
                 this.maskshow=true;
                 this.masktips="再来一局";
-                this.resultshow=true,
+                this.resultshow=true;
                     this.chess=[
                         [0,0,0],
                         [0,0,0],
@@ -132,7 +135,7 @@
                     ]
             },
             //游戏规则判断
-            /*rule(){
+            rule(){
                 for(var i=0;i<3;i++){
                     for(var j=0;j<3;j++){
                         //打横
@@ -169,7 +172,19 @@
                         }
                     }
                 }
-            },*/
+                if(this.chess[0][0] !== 0 && this.chess[0][1] !== 0 && this.chess[0][2] !== 0 &&
+                    this.chess[1][0] !== 0 && this.chess[1][1] !== 0 &&this.chess[1][2] !== 0 &&
+                    this.chess[2][0] !== 0 && this.chess[2][1] !== 0 && this.chess[2][2] !== 0){
+                    this.maskshow=true;
+                    this.masktips="平局，再来一局";
+                    this.resultshow=false;
+                    this.chess=[
+                        [0,0,0],
+                        [0,0,0],
+                        [0,0,0]
+                    ]
+                }
+            },
             //落子
             active(x,y){
                 if(this.chess[x][y]!==0){
